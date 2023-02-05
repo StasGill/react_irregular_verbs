@@ -1,0 +1,32 @@
+.table{
+    margin: 20px 10px;
+    border-radius: 8px;
+    border: 1px rgb(188, 188, 188) solid;
+    font-size: 20px;
+    border-collapse: collapse;
+}
+
+.head_td{
+    padding: 10px;
+    background-color: 'grey';
+    margin: 0;
+    
+}
+
+.td{
+    padding: 10px;
+    border-bottom: 1px rgb(188, 188, 188) solid; 
+}
+
+.thead{
+    background-color: rgb(215, 215, 215);
+}
+
+@media screen and (max-width: 600px) {
+    .table{
+        font-size: 15px;
+    }
+  }
+
+
+
