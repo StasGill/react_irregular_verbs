@@ -12,6 +12,7 @@ export const Input = ({ onChange, value }) => {
         onChange={(e) => onChange(e.target.value)}
         placeholder="Type to find here"
         autocomplete="off"
+        autoCapitalize="off"
       />
     </div>
   );
