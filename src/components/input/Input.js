@@ -15,6 +15,7 @@ export const Input = ({ onChange, value, placeholder, tittle }) => {
         placeholder={placeholder}
         autoComplete="off"
         autoCapitalize="off"
+        maxLength={30}
       />
     </div>
   );

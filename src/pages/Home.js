@@ -12,6 +12,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   const feature = true;
+
   return (
     <Container>
       <h1 className="logo">IRREGULAR VERBS</h1>
