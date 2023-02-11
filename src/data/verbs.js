@@ -17,7 +17,7 @@ export const verbs = [
   {
     base_form: "bear",
     past_simple: "bore",
-    past_participle: "born(e)",
+    past_participle: "born",
   },
   {
     base_form: "beat",
@@ -260,11 +260,6 @@ export const verbs = [
     past_participle: "grown",
   },
   {
-    base_form: "",
-    past_simple: "",
-    past_participle: "",
-  },
-  {
     base_form: "hang",
     past_simple: "hung",
     past_participle: "hung",
@@ -385,7 +380,7 @@ export const verbs = [
     past_participle: "met",
   },
   {
-    base_form: "mow",
+    base_form: "move",
     past_simple: "mowed",
     past_participle: "mown/mowed",
   },

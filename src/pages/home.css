@@ -6,11 +6,19 @@
     border-collapse: collapse;
 }
 
+.logo{
+    text-decoration: underline;
+}
+
+h1{
+    cursor: pointer;
+}
+
 .head_td{
     padding: 10px;
     background-color: 'grey';
     margin: 0;
-    
+    font-weight: bold;
 }
 
 .td{
@@ -24,7 +32,7 @@
 
 @media screen and (max-width: 600px) {
     .table{
-        font-size: 15px;
+        font-size: 10px;
     }
   }
 

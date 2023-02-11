@@ -1,0 +1,83 @@
+.waitingScreen{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(191, 235, 191);
+    text-align: center;
+    font-size: 80px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+    -webkit-text-stroke: .015em rgb(58, 58, 58);
+    /* font-family: 'Comfortaa', cursive; */
+}
+
+.waitingScreen span {
+    font-size: 50px;
+    margin: 10px 30px;
+}
+
+.errorScreen span {
+    font-size: 50px;
+    margin: 10px 30px;
+}
+
+.innerContainer{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.errorScreen{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 85, 85);
+    text-align: center;
+    font-size: 100px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.scoreItem{
+    font-size: 20px;
+}
+
+.scoreItem > span{
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+    .waitingScreen{
+        font-size: 50px;
+    }
+
+    .errorScreen{
+        font-size: 50px;
+    }
+
+    .errorScreen  span{
+        display: flex;
+        flex-direction: column;
+        font-size: 30px;
+    }
+
+    .waitingScreen{
+        font-size: 50px;
+        -webkit-text-stroke: .015em rgb(68, 68, 68);
+    }
+
+    .waitingScreen  span{
+        display: flex;
+        flex-direction: column;
+        font-size: 40px;
+        letter-spacing:2px;
+    }
+  }
