@@ -6,6 +6,9 @@ import Container from "../components/container/Container";
 import { Input } from "../components/input/Input";
 import { verbs } from "../data/verbs";
 import "./training.css";
+import error from "../assets/error.gif";
+import right from "../assets/right.gif";
+import win from "../assets/win.gif";
 
 export const Training = () => {
   const [simple, setSimple] = useState("");
@@ -40,7 +43,7 @@ export const Training = () => {
   };
 
   const randomQuestion = () => {
-    const number = Math.floor(Math.random() * 139);
+    const number = Math.floor(Math.random() * 138);
 
     const item = verbs[number];
 
@@ -124,6 +127,11 @@ export const Training = () => {
       {successScreen && (
         <div className="waitingScreen">
           <div>Right</div>
+          <img
+            src={right}
+            style={{ width: "200px", margin: "0 auto" }}
+            alt="right"
+          />
           <p>
             <span>{question.base_form}</span>
             <span>{question.past_simple}</span>
@@ -135,6 +143,11 @@ export const Training = () => {
       {errorScreen && (
         <div className="errorScreen">
           <div>Error</div>
+          <img
+            src={error}
+            style={{ width: "200px", margin: "0 auto" }}
+            alt="error"
+          />
           <p>
             <span>{question.base_form}</span>
             <span>{question.past_simple}</span>
@@ -146,6 +159,11 @@ export const Training = () => {
       {finalScreen && (
         <div className="waitingScreen">
           <div>Finish</div>
+          <img
+            src={win}
+            style={{ width: "200px", margin: "0 auto" }}
+            alt="final"
+          />
           <div>Your score:</div>
           <div>Right: {score.right}</div>
           <div style={{ marginBottom: "60px" }}>Incorrect: {score.error}</div>
