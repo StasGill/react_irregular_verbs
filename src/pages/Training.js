@@ -51,8 +51,8 @@ export const Training = () => {
   };
 
   const checkQuestion = () => {
-    const first = question.past_simple === simple;
-    const second = question.past_participle === particular;
+    const first = question.past_simple === simple.toLowerCase();
+    const second = question.past_participle === particular.toLowerCase();
     if (first && second) {
       setSuccessScreen(true);
       setScore({
