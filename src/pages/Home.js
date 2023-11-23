@@ -11,19 +11,17 @@ const Home = () => {
 
   const navigate = useNavigate();
 
-  const feature = true;
-
   return (
     <Container>
-      <h1 className="logo">IRREGULAR VERBS</h1>
-      <Input
-        value={value}
-        onChange={setValue}
-        placeholder="Type to find here"
-      />
-      {feature && (
-        <Button text="Training" onClick={() => navigate("/training")} />
-      )}
+      <div className="header">
+        <h1 className="logo">IRREGULAR VERBS</h1>
+        <Input
+          value={value}
+          onChange={setValue}
+          placeholder="Find irregular verb"
+        />
+        <Button text="Learn verbs" onClick={() => navigate("/training")} />
+      </div>
       <table className="table">
         <thead className="thead">
           <tr>

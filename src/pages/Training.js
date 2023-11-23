@@ -129,7 +129,7 @@ export const Training = () => {
           <div>Right</div>
           <img
             src={right}
-            style={{ width: "200px", margin: "0 auto" }}
+            style={{ width: "350px", margin: "0 auto" }}
             alt="right"
           />
           <p>
@@ -137,7 +137,9 @@ export const Training = () => {
             <span>{question.past_simple}</span>
             <span>{question.past_participle}</span>
           </p>
-          <Button text="Next" onClick={nextQuestion} />
+          <div className="buttonContainer">
+            <Button text="Next" onClick={nextQuestion} />
+          </div>
         </div>
       )}
       {errorScreen && (
@@ -145,7 +147,7 @@ export const Training = () => {
           <div>Error</div>
           <img
             src={error}
-            style={{ width: "200px", margin: "0 auto" }}
+            style={{ width: "350px", margin: "0 auto" }}
             alt="error"
           />
           <p>
@@ -153,7 +155,9 @@ export const Training = () => {
             <span>{question.past_simple}</span>
             <span>{question.past_participle}</span>
           </p>
-          <Button text="Next" onClick={nextQuestion} />
+          <div className="buttonContainer">
+            <Button text="Next" onClick={nextQuestion} />
+          </div>
         </div>
       )}
       {finalScreen && (
@@ -161,13 +165,15 @@ export const Training = () => {
           <div>Finish</div>
           <img
             src={win}
-            style={{ width: "200px", margin: "0 auto" }}
+            style={{ width: "300px", margin: "0 auto" }}
             alt="final"
           />
           <div>Your score:</div>
           <div>Right: {score.right}</div>
           <div style={{ marginBottom: "60px" }}>Incorrect: {score.error}</div>
-          <Button text="Save score" onClick={finish} />
+          <div className="buttonContainer">
+            <Button text="Save score" onClick={finish} />
+          </div>
         </div>
       )}
 
@@ -181,8 +187,8 @@ export const Training = () => {
               <Input
                 value={score.name}
                 onChange={(e) => setScore({ ...score, name: e })}
-                placeholder="Type your name"
-                tittle={"Your name"}
+                placeholder="Your'e name ..."
+                tittle={"Write your name "}
               />
               <Button text="Start" onClick={start} />
               {localScore && (
